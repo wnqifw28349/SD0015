@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: fixed;
+  top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 1;
+  gap: 30px;
+  width: 100%;
+}
+
+.container img {
+  height: 60px;
+  width: auto;
+  border-radius: 5px;
+}
+
+.container :hover {
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  .container img {
+    height: 100px;
+    width: auto;
+    border-radius: 10px;
+  }
+}
+
+.backdrop {
+  position: relative;
+  object-fit: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
